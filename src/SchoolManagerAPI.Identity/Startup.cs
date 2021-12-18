@@ -29,7 +29,7 @@ namespace SchoolManagerAPI.Identity
             // Settings Auth
 
             services.AddControllers();
-            services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(c =>  //t
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SchoolManagerAPI.Identity", Version = "v1" });
             });
