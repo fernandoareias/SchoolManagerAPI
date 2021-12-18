@@ -1,0 +1,26 @@
+name: Main School Manager 
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore
+      run: dotnet restore src/SchoolManager.sln
+    - name: Build
+      run: dotnet build --no-restore src/SchoolManager.sln
+    - name: Test
+      run: dotnet test --no-build --verbosity normal src/SchoolManager.sln
+    
