@@ -1,4 +1,4 @@
-name: [Main] School Manager API
+name: Main School Manager API
 
 on:
   push:
