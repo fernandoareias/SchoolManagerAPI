@@ -12,4 +12,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\1.2.2 - SchoolManager.Service.Course.AppService\1.2.2 - SchoolManager.Service.Course.AppService.csproj" />
+    <ProjectReference Include="..\1.2.5.2 - SchoolManager.Service.Course.Infra.CrossCutting\1.2.5.2 - SchoolManager.Service.Course.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
 </Project>
