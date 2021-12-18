@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SchoolManagerAPI.Gateway
+namespace SchoolManager.Gateway
 {
     public class Program
     {

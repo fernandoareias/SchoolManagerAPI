@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SchoolManagerAPI.Identity
+namespace SchoolManager.Services.Identity
 {
     public class Program
     {
