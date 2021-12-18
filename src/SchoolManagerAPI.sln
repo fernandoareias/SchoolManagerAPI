@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Gateways", "0 - Gateway
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Workers", "3 - Workers", "{8392CC79-D88A-45C9-A2A0-03037D7857F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagerAPI.Gateway", "SchoolManagerAPI.Gateway\SchoolManagerAPI.Gateway.csproj", "{96FB20C2-7BC6-406A-8BAE-326AC50B0C85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagerAPI.Gateway", "SchoolManagerAPI.Gateway\SchoolManagerAPI.Gateway.csproj", "{96FB20C2-7BC6-406A-8BAE-326AC50B0C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagerAPI.Identity", "SchoolManagerAPI.Identity\SchoolManagerAPI.Identity.csproj", "{EF66A232-F7F9-4FE5-8B7F-A1A55016C504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +23,17 @@ Global
 		{96FB20C2-7BC6-406A-8BAE-326AC50B0C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96FB20C2-7BC6-406A-8BAE-326AC50B0C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96FB20C2-7BC6-406A-8BAE-326AC50B0C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF66A232-F7F9-4FE5-8B7F-A1A55016C504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF66A232-F7F9-4FE5-8B7F-A1A55016C504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF66A232-F7F9-4FE5-8B7F-A1A55016C504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF66A232-F7F9-4FE5-8B7F-A1A55016C504}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{96FB20C2-7BC6-406A-8BAE-326AC50B0C85} = {6ABB857F-D20A-4946-836E-187B3A00F7B6}
+		{EF66A232-F7F9-4FE5-8B7F-A1A55016C504} = {B22E034D-A8FC-4A03-951C-9B6FB52C2F71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C9E2C1C7-DA97-4F13-8B03-7C68CF15125D}
