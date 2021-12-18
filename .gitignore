@@ -3,3 +3,17 @@
 ################################################################################
 
 /src/.vs
+/src/SchoolManager.Services.Course.API/obj/Debug/net5.0
+/src/SchoolManager.Services.Course.Domain/obj/Debug/net5.0
+/src/SchoolManager.Services.Course.Infrastructure/obj/Debug/net5.0
+/src/SchoolManager.Services.Course.Tests/obj/Debug/net5.0
+/src/SchoolManagerAPI.Gateway/bin/Debug/net5.0
+/src/SchoolManagerAPI.Gateway/obj/Debug/net5.0
+/src/SchoolManagerAPI.Gateway/obj
+/src/SchoolManagerAPI.Identity/bin/Debug/net5.0
+/src/SchoolManagerAPI.Identity/obj/Debug/net5.0/Razor/Views/Account/AccessDenied.cshtml.g.cs
+/src/SchoolManagerAPI.Identity/obj/Debug/net5.0
+/src/SchoolManagerAPI.Identity/obj
+/.vs
+/src/SchoolManager.Services.Course.API/appsettings.json
+/src/SchoolManager.Services.Course.API/appsettings.Development.json
