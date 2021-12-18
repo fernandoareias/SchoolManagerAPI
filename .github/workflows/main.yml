@@ -1,4 +1,4 @@
-name: .NET
+name: [Main] School Manager API
 
 on:
   push:
