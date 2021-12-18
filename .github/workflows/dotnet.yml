@@ -17,7 +17,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - name: LS SRC
-      run: ls src
-    - name: LS /SRC
-      run: ls /src/
+    - name: Restore
+      run: dotnet restore src/SchoolManagerAPI.sln
+    
