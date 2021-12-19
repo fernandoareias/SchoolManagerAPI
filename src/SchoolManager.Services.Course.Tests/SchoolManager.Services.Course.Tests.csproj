@@ -19,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SchoolManager.Services.Course.Domain\SchoolManager.Services.Course.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
