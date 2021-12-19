@@ -23,8 +23,10 @@ namespace SchoolManager.Services.Course.Domain.Course.Entity
         [Range(1, 9999)]
         public decimal Price { get; set; }
         [Required(ErrorMessage = "Difficulty is required!")]
+        [EnumDataType(typeof(EDifficulty))]
         public EDifficulty Difficulty { get;  set; }
         [Required(ErrorMessage = "Workload is required!")]
+        [Range(1, 5000, ErrorMessage = "Should have a maximum of 5000h and a minimum of 1h")]
         public int Workload { get; set; }
         [Required(ErrorMessage = "Start date is required!")]
         public DateTime StartDate { get; set; }
