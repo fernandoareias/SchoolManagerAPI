@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Ocelot.Middleware;
+using SchoolManager.Services.Course.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,12 +28,8 @@ namespace SchoolManager.Services.Course.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SchoolManager.Services.Course.API", Version = "v1" });
-            });
+            services.AddInfrastructure(Configuration);
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,9 +43,9 @@ namespace SchoolManager.Services.Course.API
             }
 
             app.UseHttpsRedirection();
-
+            app.UseOcelot();
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
