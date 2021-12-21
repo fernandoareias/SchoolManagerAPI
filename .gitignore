@@ -3,30 +3,9 @@
 ################################################################################
 
 /src/.vs
-/src/SchoolManager.Services.Course.API/obj/Debug/net5.0
-/src/SchoolManager.Services.Course.Domain/obj/Debug/net5.0
-/src/SchoolManager.Services.Course.Infrastructure/obj/Debug/net5.0
-/src/SchoolManager.Services.Course.Tests/obj/Debug/net5.0
-/src/SchoolManagerAPI.Gateway/bin/Debug/net5.0
-/src/SchoolManagerAPI.Gateway/obj/Debug/net5.0
-/src/SchoolManagerAPI.Gateway/obj
-/src/SchoolManagerAPI.Identity/bin/Debug/net5.0
-/src/SchoolManagerAPI.Identity/obj/Debug/net5.0/Razor/Views/Account/AccessDenied.cshtml.g.cs
-/src/SchoolManagerAPI.Identity/obj/Debug/net5.0
-/src/SchoolManagerAPI.Identity/obj
 /.vs
-/src/SchoolManager.Services.Course.API/appsettings.json
-/src/SchoolManager.Services.Course.API/appsettings.Development.json
-/src/SchoolManager.Services.Course.API/bin/Debug/net5.0
-/src/SchoolManager.Services.Course.API/obj
-/src/SchoolManager.Services.Course.Application/bin/Debug/net5.0
-/src/SchoolManager.Services.Course.Application/obj/Debug/net5.0
-/src/SchoolManager.Services.Course.Domain/bin/Debug/net5.0
-/src/SchoolManager.Services.Course.Infrastructure/bin/Debug/net5.0
-/src/SchoolManager.Services.Course.Infrastructure/obj
-/src/SchoolManager.Services.Course.Tests/bin/Debug/net5.0
-/src/SchoolManager.Services.Course.Tests/obj
-/src/1.2.2 - SchoolManager.Service.Course.AppService/obj/Debug/net5.0
-/src/1.2.2 - SchoolManager.Service.Course.AppService/obj
-/src/1.2.2 - SchoolManager.Service.Course.Domain/obj
-/src
+/*/*/obj
+/*/*/bin
+/*/*/appsettings.json
+/*/*/appsettings.Development.json
+
