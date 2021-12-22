@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SchoolManager.Services.Teacher.Domain.Teacher.Enums;
 using SchoolManager.Services.Teacher.Domain.Teacher.HttpActions;
 using SchoolManager.Services.Teacher.Domain.Teacher.Interfaces;
 using SchoolManager.Services.Teacher.Domain.Teacher.Response;
@@ -27,7 +28,7 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Services
         {
             try
             {
-                var client = httpClient.CreateClient("MangoAPI");
+                var client = httpClient.CreateClient("TeacherAPI");
                 HttpRequestMessage message = new HttpRequestMessage();
                 message.Headers.Add("Accept", "application/json");
                 message.RequestUri = new Uri(apiRequest.Url);
@@ -46,13 +47,13 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Services
                 HttpResponseMessage apiResponse = null;
                 switch (apiRequest.ApiType)
                 {
-                    case SD.ApiType.POST:
+                    case ApiType.POST:
                         message.Method = HttpMethod.Post;
                         break;
-                    case SD.ApiType.PUT:
+                    case ApiType.PUT:
                         message.Method = HttpMethod.Put;
                         break;
-                    case SD.ApiType.DELETE:
+                    case ApiType.DELETE:
                         message.Method = HttpMethod.Delete;
                         break;
                     default:

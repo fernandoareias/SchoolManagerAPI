@@ -39,13 +39,13 @@ namespace SchoolManager.Services.Course.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SchoolManager.Services.Course.API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CourseAPI v1"));
             }
 
             app.UseHttpsRedirection();
-            app.UseOcelot();
+            //app.UseOcelot();
             app.UseRouting();
-            app.UseAuthentication();
+            //app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

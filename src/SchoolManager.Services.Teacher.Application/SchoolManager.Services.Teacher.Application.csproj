@@ -8,4 +8,9 @@
     <ProjectReference Include="..\SchoolManager.Services.Teacher.Domain\SchoolManager.Services.Teacher.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Teacher\Interfaces\" />
+    <Folder Include="Teacher\DTOs\" />
+  </ItemGroup>
+
 </Project>

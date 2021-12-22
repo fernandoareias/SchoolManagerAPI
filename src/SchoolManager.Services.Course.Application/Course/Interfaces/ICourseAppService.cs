@@ -13,7 +13,7 @@ namespace SchoolManager.Services.Course.Application.Course.Interfaces
         Task<IResponse> GetAllCourses();
         Task<IResponse> GetCourseById(Guid Id);
         Task<IResponse> CreateCourse(CourseCreateDto courseDto);
-        Task<IResponse> UpdateCourse(CourseUpdateDto courseDto);
+        Task<IResponse> UpdateCourse(CourseUpdateDto courseDto, Guid id);
         Task<IResponse> RemoveCourse(Guid Id);
     }
 }

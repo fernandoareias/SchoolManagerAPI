@@ -89,11 +89,11 @@ namespace SchoolManager.Services.Course.Application.Course
             }
         }
 
-        public async Task<IResponse> UpdateCourse(CourseUpdateDto courseDto)
+        public async Task<IResponse> UpdateCourse(CourseUpdateDto courseDto, Guid id)
         {
             try
             {
-                var course = await _courseService.UpdateCourse(courseDto.ToDomain());
+                var course = await _courseService.UpdateCourse(courseDto.ToDomain(), id);
 
                 if (course == null)
                 {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SchoolManager.Services.Course.Application
+namespace SchoolManager.Services.Teacher.Application
 {
      public interface IResponse
     {

@@ -12,7 +12,14 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Entities
     [Table("Teachers")]
     public class Teacher : Entity
     {
-        
+        public Teacher(Name name, Email email, Address adresses, Guid courseId)
+        {
+            Name = name;
+            Email = email;
+            Adresses = adresses;
+            CourseId = courseId;
+        }
+
         [Required(ErrorMessage = "Name is required!")]
         public virtual Name Name { get; set; }
         [Required(ErrorMessage = "Email is required!")]
