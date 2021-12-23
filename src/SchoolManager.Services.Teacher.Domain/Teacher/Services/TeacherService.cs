@@ -57,19 +57,17 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Services
             return await _teacherRepository.RemoveByCourseId(IdCourse);
         }
 
-        public async Task<Entities.Teacher> Update(Guid IdCourse, Guid IdTeacher, TeacherUpdateDto teacherDto)
+        public async Task<Entities.Teacher> Update(Guid IdTeacher, TeacherUpdateDto teacherDto)
         {
             var teacher = await _teacherRepository.GetById(IdTeacher);
 
-            if (teacher == null) return null;
+            if (teacher == null) 
+                return null;
 
-            var name = new Name(teacherDto.FirstName, teacherDto.LastName);
-            var email = new Email(teacherDto.Email);
-            var address = new Address(teacherDto.Address.City, teacherDto.Address.ZipCode, teacherDto.Address.Street, teacherDto.Address.State, teacherDto.Address.Country);
 
-            teacher.Name = name;
-            teacher.Email = email;
-            teacher.Adresses = address;
+            teacher.Name = new Name(teacherDto.FirstName, teacherDto.LastName);
+            teacher.Email = new Email(teacherDto.Email);
+            teacher.Adresses = new Address(teacherDto.Address.City, teacherDto.Address.ZipCode, teacherDto.Address.Street, teacherDto.Address.State, teacherDto.Address.Country);
 
             return await _teacherRepository.Update(teacher);
         }

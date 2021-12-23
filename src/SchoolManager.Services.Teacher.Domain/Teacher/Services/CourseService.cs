@@ -1,5 +1,7 @@
-﻿using SchoolManager.Services.Teacher.Domain.Teacher.Entities;
+﻿using Newtonsoft.Json;
+using SchoolManager.Services.Teacher.Domain.Teacher.Entities;
 using SchoolManager.Services.Teacher.Domain.Teacher.Interfaces;
+using SchoolManager.Services.Teacher.Domain.Teacher.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,18 +11,27 @@ using System.Threading.Tasks;
 
 namespace SchoolManager.Services.Teacher.Domain.Teacher.Services
 {
-    public class CourseService : BaseService, ICourseService
+    public class CourseService : ICourseService
     {
-        private readonly IHttpClientFactory _clientFactory;
+        private readonly HttpClient client;
 
-        public CourseService(IHttpClientFactory clientFactory) : base(clientFactory)
+        public CourseService(HttpClient client)
         {
-            _clientFactory = clientFactory;
-        }
+            this.client = client;
+        }        
 
-        public Task<Course> GetCourseByName(string name)
+        public async Task<Course> GetCourseById(Guid id)
         {
-            throw new NotImplementedException();
+            var response = await client.GetAsync($"/api/courses/{id}");
+            var apiContent = await response.Content.ReadAsStringAsync();
+            var resp = JsonConvert.DeserializeObject<ResponseView>(apiContent);
+            if (resp.IsSuccess)
+            {
+                var course = JsonConvert.DeserializeObject<Course>(Convert.ToString(resp.Data));
+                course.Id = id;
+                return course;
+            }
+            return new Course();
         }
     }
 }
