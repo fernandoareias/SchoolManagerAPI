@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SchoolManager.Services.Teacher.Application.Responses
 {
-    internal class ResponseView : IResponse
+    internal class ResponseView : IResponse 
     {
         public ResponseView(bool isSuccess, string menssage, object data)
         {
