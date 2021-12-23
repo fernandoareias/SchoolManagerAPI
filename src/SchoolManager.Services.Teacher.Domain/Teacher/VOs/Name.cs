@@ -41,5 +41,10 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.VOs
             yield return FirstName;
             yield return LastName;
         }
+
+        public override string ToString()
+        {
+            return FirstName + " " + LastName;
+        }
     }
 }
