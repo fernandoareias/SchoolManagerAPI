@@ -18,13 +18,17 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Services
             _teacherRepository = teacherRepository;
         }
 
+        public async Task<List<Teacher.Entities.Teacher>> GetAll()
+        {
+            return await _teacherRepository.GetAll();
+        }
+        
         public async Task<Entities.Teacher> Create(Guid IdCourse, TeacherCreateDto teacherDto)
         {
-            //cheack if course existe
 
             var name = new Name(teacherDto.FirstName, teacherDto.LastName);
             var email = new Email(teacherDto.Email);
-            var address = new Address(teacherDto.City, teacherDto.ZipCode, teacherDto.Street, teacherDto.State, teacherDto.Country);
+            var address = new Address(teacherDto.Address.City, teacherDto.Address.ZipCode, teacherDto.Address.Street, teacherDto.Address.State, teacherDto.Address.Country);
 
             var teacher = new Entities.Teacher(name, email, address, IdCourse);
             
@@ -61,7 +65,7 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Services
 
             var name = new Name(teacherDto.FirstName, teacherDto.LastName);
             var email = new Email(teacherDto.Email);
-            var address = new Address(teacherDto.City, teacherDto.ZipCode, teacherDto.Street, teacherDto.State, teacherDto.Country);
+            var address = new Address(teacherDto.Address.City, teacherDto.Address.ZipCode, teacherDto.Address.Street, teacherDto.Address.State, teacherDto.Address.Country);
 
             teacher.Name = name;
             teacher.Email = email;
