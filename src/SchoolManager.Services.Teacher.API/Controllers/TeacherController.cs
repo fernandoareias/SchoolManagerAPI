@@ -21,10 +21,10 @@ namespace SchoolManager.Services.Teacher.API.Controllers
         }
 
        // [Authorize]
-        [HttpGet("teachers")]
-        public async Task<IActionResult> GetAllTeacher()
+        [HttpGet("{idCourse}/teachers")]
+        public async Task<IActionResult> GetAllTeacher(Guid idCourse)
         {
-            var result = await _teacherAppService.GetAll();
+            var result = await _teacherAppService.GetByCourseId(idCourse);
             if (result.Data == null) return NotFound(result);
             return Ok(result);
         }
@@ -48,10 +48,10 @@ namespace SchoolManager.Services.Teacher.API.Controllers
         }
 
         // [Authorize]
-        [HttpPut("{idCourse}/teachers/{idTeacher}")]
-        public async Task<IActionResult> UpdateTeacher(Guid idCourse, Guid idTeacher, [FromBody] TeacherUpdateDto teacherDto)
+        [HttpPut("teachers/{idTeacher}")]
+        public async Task<IActionResult> UpdateTeacher(Guid idTeacher, [FromBody] TeacherUpdateDto teacherDto)
         {
-            var result = await _teacherAppService.Update(idCourse, idTeacher, teacherDto);
+            var result = await _teacherAppService.Update(idTeacher, teacherDto);
             if (result.Data == null) return NotFound(result);
             return Ok(result);
         }
