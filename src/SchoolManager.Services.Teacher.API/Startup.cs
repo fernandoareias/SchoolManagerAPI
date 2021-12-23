@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using SchoolManager.Services.Teacher.Domain.Teacher.Interfaces;
+using SchoolManager.Services.Teacher.Domain.Teacher.Services;
 using SchoolManager.Services.Teacher.Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -29,6 +31,9 @@ namespace SchoolManager.Services.Teacher.API
         {
 
             services.AddInfrastructure(Configuration);
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
