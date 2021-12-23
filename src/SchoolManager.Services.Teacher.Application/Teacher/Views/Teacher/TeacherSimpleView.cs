@@ -20,7 +20,7 @@ namespace SchoolManager.Services.Teacher.Application.Teacher.Views.Teacher
         {
             Id = teacher.Id;
             Name = teacher.Name.ToString();
-            
+            Email = teacher.Email.Address;
             Course = new CourseSimpleView(course);
         }
     }

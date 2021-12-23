@@ -21,6 +21,7 @@ namespace SchoolManager.Services.Teacher.Application.Teacher.Views
         {
             Id = teacher.Id;
             Name = teacher.Name.ToString();
+            Email = teacher.Email.Address;
             Address = new TeacherAddressView(teacher);
             Course = new CourseView(course);
         }
