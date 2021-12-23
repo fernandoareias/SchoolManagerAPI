@@ -28,68 +28,64 @@ namespace SchoolManager.Services.Teacher.Application.Teacher
             _courseServicce = courseServicce;
         }
 
-        public async Task<IResponse> GetAll()
-        {
-            //GetCourse
-            //var course = _courseServicce.GetCourseByName;
-            var course = new Course();
-            var teachers = await _teacherService.GetAll();
-            if (teachers == null)
-            {
-                return new ResponseView(false, "Teacher nop", null);
-            }
-
-            var views = teachers.Select(t => new TeacherSimpleView(t, course)).ToList();
-
-
-
-            return new ResponseView(true, "Teacher update", views);
-        }
+     
 
         public async Task<IResponse> Create(Guid IdCourse, TeacherCreateDto teacherDto)
         {
-            //GetCourse
-            //var course = _courseServicce.GetCourseByName;
-            var course = new Course();
-            var teacher = await _teacherService.Create(IdCourse, teacherDto.ToDomain());
-            if (teacher == null)
-            {
-                return new ResponseView(false, "Teacher nop", null);
-            }
+            
+            var course = await _courseServicce.GetCourseById(IdCourse);
+            
+            if(course == null)
+                return new ResponseView(false, "Course not found", null);
 
-            return new ResponseView(true, "Teacher update", teacher);
+            var teacher = await _teacherService.Create(IdCourse, teacherDto.ToDomain());
+
+            if (teacher == null)
+                return new ResponseView(false, "Teacher not found", null);
+
+            var view = new TeacherView(teacher, course);
+
+            return new ResponseView(true, "Teacher create", view);
         }
 
         public async Task<IResponse> GetByCourseId(Guid Id)
         {
-            //GetCourse
-            //var course = _courseServicce.GetCourseByName;
-            var course = new Course();
+
             var teachers = await _teacherService.GetByCourseId(Id);
             if (teachers == null)
             {
-                return new ResponseView(false, "Teacher nop", null);
+                return new ResponseView(false, "Teacher not found", null);
             }
+
+            var course = await _courseServicce.GetCourseById(Id);
+
+            if (course == null)
+                return new ResponseView(false, "Course not found", null);
+
 
             var views = teachers.Select(t => new TeacherSimpleView(t, course)).ToList();
 
-          
-
-            return new ResponseView(true, "Teacher update", views);
+            return new ResponseView(true, "Has teachers", views);
         }
 
         public async Task<IResponse> GetById(Guid Id)
         {
-            //GetCourse
-            //var course = _courseServicce.GetCourseByName;
-            var course = new Course();
+            
             var teacher = await _teacherService.GetById(Id);
             if (teacher == null)
             {
                 return new ResponseView(false, "Teacher nop", null);
             }
 
-            return new ResponseView(true, "Teacher update", teacher);
+            var course = await _courseServicce.GetCourseById(teacher.CourseId);
+
+            if (course == null)
+                return new ResponseView(false, "Course not found", null);
+
+
+            var view = new TeacherView(teacher, course);
+
+            return new ResponseView(true, "Has teacher", view);
         }
 
         public async Task<IResponse> Remove(Guid Id)
@@ -97,21 +93,37 @@ namespace SchoolManager.Services.Teacher.Application.Teacher
             var teacher = await _teacherService.Remove(Id);
             if (teacher == null)
             {
-                return new ResponseView(false, "Teacher nop", null);
+                return new ResponseView(false, "Teacher not found", null);
             }
 
-            return new ResponseView(true, "Teacher update", teacher);
+            var course = await _courseServicce.GetCourseById(teacher.CourseId);
+
+            if (course == null)
+                return new ResponseView(false, "Course not found", null);
+
+
+            var view = new TeacherView(teacher, course);
+
+            return new ResponseView(true, "Teacher removed", view);
         }
 
-        public async Task<IResponse> Update(Guid IdCourse, Guid IdTeacher, TeacherUpdateDto teacherDto)
+        public async Task<IResponse> Update(Guid IdTeacher, TeacherUpdateDto teacherDto)
         {
-            var teacher = await _teacherService.Update(IdCourse, IdTeacher, teacherDto.ToDomain());
+            var teacher = await _teacherService.Update(IdTeacher, teacherDto.ToDomain());
             if (teacher == null)
             {
-                return new ResponseView(false, "Teacher nop", null);
+                return new ResponseView(false, "Teacher not found", null);
             }
 
-            return new ResponseView(true, "Teacher update", teacher);
+            var course = await _courseServicce.GetCourseById(teacher.CourseId);
+
+            if (course == null)
+                return new ResponseView(false, "Course not found", null);
+
+
+            var view = new TeacherView(teacher, course);
+
+            return new ResponseView(true, "Teacher update", view);
         }
     }
 }
