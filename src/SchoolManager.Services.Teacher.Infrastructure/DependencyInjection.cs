@@ -6,6 +6,12 @@ using Microsoft.OpenApi.Models;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
+using SchoolManager.Services.Teacher.Domain.Teacher.Interfaces;
+using SchoolManager.Services.Teacher.Domain.Teacher.Services;
+using System;
+using SchoolManager.Services.Teacher.Application.Teacher.Interfaces;
+using SchoolManager.Services.Teacher.Application.Teacher;
+using SchoolManager.Services.Teacher.Infrastructure.Repositories;
 
 namespace SchoolManager.Services.Teacher.Infrastructure
 {
@@ -80,6 +86,13 @@ namespace SchoolManager.Services.Teacher.Infrastructure
             services.AddControllers();
             services.AddResponseCompression();
 
+            services.AddHttpClient<ICourseService, CourseService>(u => u.BaseAddress =
+                          new Uri(configuration["ServiceUrls:CourseAPI"]));
+
+            services.AddScoped<ITeacherAppService, TeacherAppService>();
+            services.AddScoped<ITeacherService, TeacherService>();
+            services.AddScoped<ITeacherRepository, TeacherRepository>();
+            services.AddScoped<DbContext, ApplicationDbContext>();
 
             return services;
         }

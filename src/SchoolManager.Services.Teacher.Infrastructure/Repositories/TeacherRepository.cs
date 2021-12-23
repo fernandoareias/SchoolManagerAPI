@@ -31,13 +31,13 @@ namespace SchoolManager.Services.Teacher.Infrastructure.Repositories
             }
         }
 
-        public async Task<Teacher.Domain.Teacher.Entities.Teacher> Create(Teacher.Domain.Teacher.Entities.Teacher course)
+        public async Task<Teacher.Domain.Teacher.Entities.Teacher> Create(Teacher.Domain.Teacher.Entities.Teacher teacher)
         {
             try
             {
-                await _context.Teachers.AddAsync(course);
+                _context.Teachers.Add(teacher);
                 await _context.SaveChangesAsync();
-                return course;
+                return teacher;
             }
             catch (Exception)
             {
@@ -62,7 +62,7 @@ namespace SchoolManager.Services.Teacher.Infrastructure.Repositories
         {
             try
             {
-                return await _context.Teachers.AsNoTracking().FirstOrDefaultAsync(c => c.Id == Id);
+                return await _context.Teachers.AsNoTracking().FirstOrDefaultAsync(t => t.Id.Equals(Id));
             }
             catch (Exception)
             {
@@ -70,13 +70,13 @@ namespace SchoolManager.Services.Teacher.Infrastructure.Repositories
             }
         }
 
-        public async Task<Teacher.Domain.Teacher.Entities.Teacher> Remove(Teacher.Domain.Teacher.Entities.Teacher course)
+        public async Task<Teacher.Domain.Teacher.Entities.Teacher> Remove(Teacher.Domain.Teacher.Entities.Teacher teacher)
         {
             try
             {
-                _context.Teachers.Remove(course);
+                _context.Teachers.Remove(teacher);
                 await _context.SaveChangesAsync();
-                return course;
+                return teacher;
             }
             catch (Exception)
             {
@@ -105,15 +105,15 @@ namespace SchoolManager.Services.Teacher.Infrastructure.Repositories
             }
         }
 
-        public async Task<Teacher.Domain.Teacher.Entities.Teacher> Update(Teacher.Domain.Teacher.Entities.Teacher course)
+        public async Task<Teacher.Domain.Teacher.Entities.Teacher> Update(Teacher.Domain.Teacher.Entities.Teacher teacher)
         {
             try
             {
-                _context.Teachers.Update(course);
+                _context.Teachers.Update(teacher);
                 await _context.SaveChangesAsync();
-                return course;
+                return teacher;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return null;
             }
