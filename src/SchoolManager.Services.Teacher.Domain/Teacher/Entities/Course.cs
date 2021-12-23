@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SchoolManager.Services.Course.Domain.Course.Enum;
+﻿using SchoolManager.Services.Teacher.Domain.Teacher.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -8,32 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SchoolManager.Services.Course.Domain.Course.Entity
-{   
-    public class Course
+namespace SchoolManager.Services.Teacher.Domain.Teacher.Entities
+{
+    [NotMapped]
+    public class Course : Entity
     {
-        public Course() => this.Id = Guid.NewGuid();
-
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public Guid Id { get; private set; }
-
+       
         [Required(ErrorMessage = "Name is required!")]
         [MaxLength(30, ErrorMessage = "The name should be a maximum of 30 characters.")]
         [MinLength(3, ErrorMessage = "The name should be at least 3 characters long.")]
         public string Name { get;  set; }
-
         [Required(ErrorMessage = "Price is required!")]
         [Range(1, 9999)]
         public decimal Price { get; set; }
-
         [Required(ErrorMessage = "Difficulty is required!")]
-        [EnumDataType(typeof(EDifficulty))]
         public EDifficulty Difficulty { get;  set; }
-
         [Required(ErrorMessage = "Workload is required!")]
-        [Range(1, 5000, ErrorMessage = "Should have a maximum of 5000h and a minimum of 1h")]
         public int Workload { get; set; }
-
         [Required(ErrorMessage = "Start date is required!")]
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }

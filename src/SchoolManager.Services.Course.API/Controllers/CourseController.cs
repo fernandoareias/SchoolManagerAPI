@@ -20,28 +20,34 @@ namespace SchoolManager.Services.Course.API.Controllers
             _courseAppService = courseAppService;
         }
 
-        [Authorize]
+       // [Authorize]
         [HttpGet]
         public async Task<IResponse> GetAllCourse()
         {
             return await _courseAppService.GetAllCourses();
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpGet("{Id}")]
         public async Task<IResponse> GetById(Guid Id)
         {
             return await _courseAppService.GetCourseById(Id);
         }
 
-        [Authorize]
-        [HttpPut]
-        public async Task<IResponse> UpdateCourse([FromBody] CourseUpdateDto courseDto)
+        [HttpPost]
+        public async Task<IResponse> CreateCourse([FromBody] CourseCreateDto courseDto)
         {
-            return await _courseAppService.UpdateCourse(courseDto);
+            return await _courseAppService.CreateCourse(courseDto);
         }
 
-        [Authorize]
+        // [Authorize]
+        [HttpPut("{id}")]
+        public async Task<IResponse> UpdateCourse([FromBody] CourseUpdateDto courseDto, Guid id)
+        {
+            return await _courseAppService.UpdateCourse(courseDto, id);
+        }
+
+        // [Authorize]
         [HttpDelete]
         public async Task<IResponse> DeleteCourse(Guid Id)
         {

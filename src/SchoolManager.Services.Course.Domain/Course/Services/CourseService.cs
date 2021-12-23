@@ -26,7 +26,7 @@ namespace SchoolManager.Services.Course.Domain.Services
             entity.StartDate = courseDto.StartDate;
             entity.EndDate = courseDto.EndDate;
 
-
+            
             return await _courseRepoistory.Create(entity);
 
         }
@@ -48,18 +48,20 @@ namespace SchoolManager.Services.Course.Domain.Services
             return await _courseRepoistory.Remove(entity);
         }
 
-        public async Task<Course.Entity.Course> UpdateCourse(CourseUpdateDto courseDto)
+        public async Task<Course.Entity.Course> UpdateCourse(CourseUpdateDto courseDto, Guid id)
         {
-            var entity = new Course.Entity.Course();
-            entity.Name = courseDto.Name;
-            entity.Price = courseDto.Price;
-            entity.Difficulty = (EDifficulty)courseDto.Difficulty;
-            entity.Workload = courseDto.Workload;
-            entity.StartDate = courseDto.StartDate;
-            entity.EndDate = courseDto.EndDate;
+            var course = await _courseRepoistory.GetById(id);
+            if (course == null) return null;
+
+            course.Name = courseDto.Name;
+            course.Price = courseDto.Price;
+            course.Difficulty = (EDifficulty)courseDto.Difficulty;
+            course.Workload = courseDto.Workload;
+            course.StartDate = courseDto.StartDate;
+            course.EndDate = courseDto.EndDate;
 
 
-            return await _courseRepoistory.Update(entity);
+            return await _courseRepoistory.Update(course);
         }
     }
 }

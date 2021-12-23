@@ -15,4 +15,8 @@
     <Folder Include="Course\Interfaces\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="5.0.13" />
+  </ItemGroup>
+
 </Project>

@@ -1,18 +1,19 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SchoolManager.Services.Course.Infrastructure.Context;
-using SchoolManager.Services.Course.Infrastructure.Repositories;
-using SchoolManager.Services.Course.Domain.Interfaces;
+using SchoolManager.Services.Teacher.Infrastructure.Context;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using SchoolManager.Services.Course.Domain.Services;
 using Microsoft.AspNetCore.Builder;
-using SchoolManager.Services.Course.Application.Course;
-using SchoolManager.Services.Course.Application.Course.Interfaces;
+using SchoolManager.Services.Teacher.Domain.Teacher.Interfaces;
+using SchoolManager.Services.Teacher.Domain.Teacher.Services;
+using System;
+using SchoolManager.Services.Teacher.Application.Teacher.Interfaces;
+using SchoolManager.Services.Teacher.Application.Teacher;
+using SchoolManager.Services.Teacher.Infrastructure.Repositories;
 
-namespace SchoolManager.Services.Course.Infrastructure
+namespace SchoolManager.Services.Teacher.Infrastructure
 {
     public static class DependencyInjection
     {
@@ -29,7 +30,7 @@ namespace SchoolManager.Services.Course.Infrastructure
             #region Swagger
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CourseAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TeacherAPI", Version = "v1" });
             });
             //services.AddAuthentication("Bearer")
             //    .AddJwtBearer("Bearer", options =>
@@ -45,14 +46,14 @@ namespace SchoolManager.Services.Course.Infrastructure
             //    options.AddPolicy("ApiScope", policy =>
             //    {
             //        policy.RequireAuthenticatedUser();
-            //        policy.RequireClaim("scope", "bob");
+            //        policy.RequireClaim("scope", "SchoolManager");
 
             //    });
             //});
 
             //services.AddSwaggerGen(c =>
             //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Manage.Services.ShoppingCart", Version = "v1" });
+            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Manage.Services.Teacher", Version = "v1" });
             //    c.EnableAnnotations();
             //    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
             //    {
@@ -85,20 +86,13 @@ namespace SchoolManager.Services.Course.Infrastructure
             services.AddControllers();
             services.AddResponseCompression();
 
-            #region DI
-            #region DI Context
+            services.AddHttpClient<ICourseService, CourseService>(u => u.BaseAddress =
+                          new Uri(configuration["ServiceUrls:CourseAPI"]));
+
+            services.AddScoped<ITeacherAppService, TeacherAppService>();
+            services.AddScoped<ITeacherService, TeacherService>();
+            services.AddScoped<ITeacherRepository, TeacherRepository>();
             services.AddScoped<DbContext, ApplicationDbContext>();
-            #endregion
-            #region DI AppService
-            services.AddScoped<ICourseAppService, CourseAppService>();
-            #endregion
-            #region DI Service
-            services.AddScoped<ICourseService, CourseService>();
-            #endregion
-            #region DI Repository
-            services.AddScoped<ICourseRepository, CourseRepository>();
-            #endregion
-            #endregion
 
             return services;
         }
