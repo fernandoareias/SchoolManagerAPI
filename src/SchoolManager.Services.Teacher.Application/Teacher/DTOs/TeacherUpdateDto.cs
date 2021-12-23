@@ -19,6 +19,7 @@ namespace SchoolManager.Services.Teacher.Application.Teacher.DTOs
             {
                 FirstName = FirstName,
                 LastName = LastName,
+                Email = Email,
                 Address = Address.ToDomain()
             };
         }
