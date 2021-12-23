@@ -8,6 +8,6 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Interfaces
 {
     public interface ICourseService
     {
-        Task<Domain.Teacher.Entities.Course> GetCourseByName(string name);
+        Task<Domain.Teacher.Entities.Course> GetCourseById(Guid id);
     }
 }

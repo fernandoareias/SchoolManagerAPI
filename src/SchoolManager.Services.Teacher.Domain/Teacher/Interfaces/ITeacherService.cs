@@ -13,7 +13,7 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Interfaces
         Task<List<Teacher.Entities.Teacher>> GetAll();
         Task<List<Teacher.Entities.Teacher>> GetByCourseId(Guid Id);
         Task<Teacher.Entities.Teacher> Create(Guid IdCourse , TeacherCreateDto teacherDto);
-        Task<Teacher.Entities.Teacher> Update(Guid IdCourse, Guid IdTeacher, TeacherUpdateDto teacherDto);
+        Task<Teacher.Entities.Teacher> Update(Guid IdTeacher, TeacherUpdateDto teacherDto);
         Task<Teacher.Entities.Teacher> Remove(Guid Id);
         Task<List<Teacher.Entities.Teacher>> RemoveByCourseId(Guid IdCourse);
 
