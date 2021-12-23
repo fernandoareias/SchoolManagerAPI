@@ -15,6 +15,6 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Entities
         }
 
         [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
     }
 }

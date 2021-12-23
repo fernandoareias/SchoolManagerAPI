@@ -12,6 +12,11 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.Entities
     [Table("Teachers")]
     public class Teacher : Entity
     {
+        public Teacher()
+        {
+
+        }
+
         public Teacher(Name name, Email email, Address adresses, Guid courseId)
         {
             Name = name;
