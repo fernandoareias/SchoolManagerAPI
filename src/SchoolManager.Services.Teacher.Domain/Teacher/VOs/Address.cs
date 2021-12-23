@@ -33,7 +33,7 @@ namespace SchoolManager.Services.Teacher.Domain.Teacher.VOs
 
         [Required(ErrorMessage = "ZipCode is required")]
         [Column("ZipCode")]
-        [MaxLength(5, ErrorMessage = "The zipcode should be a maximum of 5 characters.")]
+        [MaxLength(20, ErrorMessage = "The zipcode should be a maximum of 20 characters.")]
         public string ZipCode { get; set; }
 
         [Required(ErrorMessage = "Street is required")]
