@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pGhz1Gs1LaU5Xi8UGJd/gYeercCxhLOgRQzmLNLSfNFsmK0nvP0F4wP6Bd2GQ9Wo5vM/8f9qHsEM5Iza8CaQKQ==",
+  "dgSpecHash": "8PgrJNJ4hbWTSedu+bPnI/caixZT8QEIEM0D3WjRZf7r0jTzDR9Se99riKF+V1uTc1Ci0YyWWaQm0WtkgryI/A==",
   "success": true,
-  "projectFilePath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj",
+  "projectFilePath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

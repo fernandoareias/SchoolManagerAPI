@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fcruYIuukpD3yzOyx7Gc5VJa2Bk0ltwwqrLSZBvP7Wf4fB1R9iGJ9a5AVzrbQSllVFs5rekDwOfylWsh1Xt09w==",
+  "dgSpecHash": "Gdht9GfOYHyq0fiZdWPeVqwV98w56feVBrOUviS1be8uGAlExVa/GNDPAsEfBdnCqGJrfLn82SayeMHi9vtoLg==",
   "success": true,
-  "projectFilePath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Infrastructure\\SchoolManager.Services.Course.Infrastructure.csproj",
+  "projectFilePath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Infrastructure\\SchoolManager.Services.Course.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.13\\microsoft.aspnetcore.authentication.jwtbearer.5.0.13.nupkg.sha512",

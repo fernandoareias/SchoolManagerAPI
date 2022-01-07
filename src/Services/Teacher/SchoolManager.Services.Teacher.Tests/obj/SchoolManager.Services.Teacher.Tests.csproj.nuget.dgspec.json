@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Tests\\SchoolManager.Services.Teacher.Tests.csproj": {}
+    "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Tests\\SchoolManager.Services.Teacher.Tests.csproj": {}
   },
   "projects": {
-    "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj": {
+    "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj",
+        "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj",
         "projectName": "SchoolManager.Services.Teacher.Domain",
-        "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj",
+        "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj",
         "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Domain\\obj\\",
+        "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Tests\\SchoolManager.Services.Teacher.Tests.csproj": {
+    "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Tests\\SchoolManager.Services.Teacher.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Tests\\SchoolManager.Services.Teacher.Tests.csproj",
+        "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Tests\\SchoolManager.Services.Teacher.Tests.csproj",
         "projectName": "SchoolManager.Services.Teacher.Tests",
-        "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Tests\\SchoolManager.Services.Teacher.Tests.csproj",
+        "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Tests\\SchoolManager.Services.Teacher.Tests.csproj",
         "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Tests\\obj\\",
+        "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -102,8 +102,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj": {
-                "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj"
+              "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj": {
+                "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj"
               }
             }
           }
