@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5o/hvHUSrbD7RbNRVCBhSkRkmjOS108ZQB/cQsPwxiuIfyhwAHmrdVrPkLK9wn6aQAHeGQZV7uFCf+kqo8loiQ==",
+  "dgSpecHash": "CjoIErvgNBa1fizRFnwlF2c4JoSCzsk97I6qA7rMr8CgitSQ8iQJttx+TQDkmlqpOqXTtMsrctjAjL51qPR6Gw==",
   "success": true,
-  "projectFilePath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj",
+  "projectFilePath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.13\\microsoft.entityframeworkcore.abstractions.5.0.13.nupkg.sha512",
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",

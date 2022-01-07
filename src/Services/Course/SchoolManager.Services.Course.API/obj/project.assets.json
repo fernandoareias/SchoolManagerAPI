@@ -5874,11 +5874,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.API\\SchoolManager.Services.Course.API.csproj",
+      "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.API\\SchoolManager.Services.Course.API.csproj",
       "projectName": "SchoolManager.Services.Course.API",
-      "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.API\\SchoolManager.Services.Course.API.csproj",
+      "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.API\\SchoolManager.Services.Course.API.csproj",
       "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.API\\obj\\",
+      "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5898,11 +5898,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Application\\SchoolManager.Services.Course.Application.csproj": {
-              "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Application\\SchoolManager.Services.Course.Application.csproj"
+            "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Application\\SchoolManager.Services.Course.Application.csproj": {
+              "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Application\\SchoolManager.Services.Course.Application.csproj"
             },
-            "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Infrastructure\\SchoolManager.Services.Course.Infrastructure.csproj": {
-              "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Infrastructure\\SchoolManager.Services.Course.Infrastructure.csproj"
+            "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Infrastructure\\SchoolManager.Services.Course.Infrastructure.csproj": {
+              "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Infrastructure\\SchoolManager.Services.Course.Infrastructure.csproj"
             }
           }
         }
