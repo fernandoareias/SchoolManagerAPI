@@ -10,3 +10,15 @@ C:\dev\SchoolManagerAPI\src\Teacher\SchoolManager.Services.Teacher.Domain\obj\De
 C:\dev\SchoolManagerAPI\src\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\SchoolManager.Services.Teacher.Domain.dll
 C:\dev\SchoolManagerAPI\src\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\ref\SchoolManager.Services.Teacher.Domain.dll
 C:\dev\SchoolManagerAPI\src\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\SchoolManager.Services.Teacher.Domain.pdb
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\bin\Debug\net5.0\SchoolManager.Services.Teacher.Domain.deps.json
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\bin\Debug\net5.0\SchoolManager.Services.Teacher.Domain.dll
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\bin\Debug\net5.0\ref\SchoolManager.Services.Teacher.Domain.dll
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\bin\Debug\net5.0\SchoolManager.Services.Teacher.Domain.pdb
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\SchoolManager.Services.Teacher.Domain.csproj.AssemblyReference.cache
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\SchoolManager.Services.Teacher.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\SchoolManager.Services.Teacher.Domain.AssemblyInfoInputs.cache
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\SchoolManager.Services.Teacher.Domain.AssemblyInfo.cs
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\SchoolManager.Services.Teacher.Domain.csproj.CoreCompileInputs.cache
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\SchoolManager.Services.Teacher.Domain.dll
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\ref\SchoolManager.Services.Teacher.Domain.dll
+C:\dev\SchoolManagerAPI\src\Services\Teacher\SchoolManager.Services.Teacher.Domain\obj\Debug\net5.0\SchoolManager.Services.Teacher.Domain.pdb

@@ -31,7 +31,6 @@ C:\dev\SchoolManagerAPI\src\Gateway\SchoolManagerAPI.Gateway\obj\Debug\net5.0\Sc
 C:\dev\SchoolManagerAPI\src\Gateway\SchoolManagerAPI.Gateway\obj\Debug\net5.0\scopedcss\bundle\SchoolManager.Gateway.styles.css
 C:\dev\SchoolManagerAPI\src\Gateway\SchoolManagerAPI.Gateway\obj\Debug\net5.0\staticwebassets\SchoolManager.Gateway.StaticWebAssets.Manifest.cache
 C:\dev\SchoolManagerAPI\src\Gateway\SchoolManagerAPI.Gateway\obj\Debug\net5.0\SchoolManager.Gateway.RazorTargetAssemblyInfo.cache
-C:\dev\SchoolManagerAPI\src\Gateway\SchoolManagerAPI.Gateway\obj\Debug\net5.0\SchoolManager.Gateway.csproj.CopyComplete
 C:\dev\SchoolManagerAPI\src\Gateway\SchoolManagerAPI.Gateway\obj\Debug\net5.0\SchoolManager.Gateway.dll
 C:\dev\SchoolManagerAPI\src\Gateway\SchoolManagerAPI.Gateway\obj\Debug\net5.0\ref\SchoolManager.Gateway.dll
 C:\dev\SchoolManagerAPI\src\Gateway\SchoolManagerAPI.Gateway\obj\Debug\net5.0\SchoolManager.Gateway.pdb

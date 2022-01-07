@@ -10,3 +10,15 @@ C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Domain\obj\Debu
 C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\SchoolManager.Services.Course.Domain.dll
 C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\ref\SchoolManager.Services.Course.Domain.dll
 C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\SchoolManager.Services.Course.Domain.pdb
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\bin\Debug\net5.0\SchoolManager.Services.Course.Domain.deps.json
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\bin\Debug\net5.0\SchoolManager.Services.Course.Domain.dll
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\bin\Debug\net5.0\ref\SchoolManager.Services.Course.Domain.dll
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\bin\Debug\net5.0\SchoolManager.Services.Course.Domain.pdb
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\SchoolManager.Services.Course.Domain.csproj.AssemblyReference.cache
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\SchoolManager.Services.Course.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\SchoolManager.Services.Course.Domain.AssemblyInfoInputs.cache
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\SchoolManager.Services.Course.Domain.AssemblyInfo.cs
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\SchoolManager.Services.Course.Domain.csproj.CoreCompileInputs.cache
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\SchoolManager.Services.Course.Domain.dll
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\ref\SchoolManager.Services.Course.Domain.dll
+C:\dev\SchoolManagerAPI\src\Services\Course\SchoolManager.Services.Course.Domain\obj\Debug\net5.0\SchoolManager.Services.Course.Domain.pdb
