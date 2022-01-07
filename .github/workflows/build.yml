@@ -18,9 +18,9 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore
-      run: dotnet restore src/SchoolManager.sln
+      run: dotnet restore SchoolManager.sln
     - name: Build
-      run: dotnet build --no-restore src/SchoolManager.sln
+      run: dotnet build --no-restore SchoolManager.sln
     - name: Test
-      run: dotnet test --no-build --verbosity normal src/SchoolManager.sln
+      run: dotnet test --no-build --verbosity normal SchoolManager.sln
     
