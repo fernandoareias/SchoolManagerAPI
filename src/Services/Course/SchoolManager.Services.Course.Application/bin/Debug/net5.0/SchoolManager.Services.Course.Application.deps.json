@@ -1,0 +1,54 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SchoolManager.Services.Course.Application/1.0.0": {
+        "dependencies": {
+          "SchoolManager.Services.Course.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SchoolManager.Services.Course.Application.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.13": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "5.0.13.0",
+            "fileVersion": "5.0.1321.56013"
+          }
+        }
+      },
+      "SchoolManager.Services.Course.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.13"
+        },
+        "runtime": {
+          "SchoolManager.Services.Course.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SchoolManager.Services.Course.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TdnEXtDpm3o9s6RzUX0Mjgfgms4BD04uyvyxM9Xg8tQPOqqh7ZO6fWy+xJTj+wTcYuY5pYSkfPNGvtJ5FRmqWQ==",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.13",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.5.0.13.nupkg.sha512"
+    },
+    "SchoolManager.Services.Course.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

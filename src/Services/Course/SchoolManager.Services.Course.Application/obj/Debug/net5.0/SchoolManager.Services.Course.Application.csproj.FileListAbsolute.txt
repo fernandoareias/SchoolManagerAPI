@@ -1,0 +1,14 @@
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\bin\Debug\net5.0\SchoolManager.Services.Course.Application.deps.json
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\bin\Debug\net5.0\SchoolManager.Services.Course.Application.dll
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\bin\Debug\net5.0\ref\SchoolManager.Services.Course.Application.dll
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\bin\Debug\net5.0\SchoolManager.Services.Course.Application.pdb
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\bin\Debug\net5.0\SchoolManager.Services.Course.Domain.dll
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\bin\Debug\net5.0\SchoolManager.Services.Course.Domain.pdb
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\obj\Debug\net5.0\SchoolManager.Services.Course.Application.csproj.AssemblyReference.cache
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\obj\Debug\net5.0\SchoolManager.Services.Course.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\obj\Debug\net5.0\SchoolManager.Services.Course.Application.AssemblyInfoInputs.cache
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\obj\Debug\net5.0\SchoolManager.Services.Course.Application.AssemblyInfo.cs
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\obj\Debug\net5.0\SchoolManager.Services.Course.Application.csproj.CoreCompileInputs.cache
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\obj\Debug\net5.0\SchoolManager.Services.Course.Application.dll
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\obj\Debug\net5.0\ref\SchoolManager.Services.Course.Application.dll
+C:\dev\SchoolManagerAPI\src\Course\SchoolManager.Services.Course.Application\obj\Debug\net5.0\SchoolManager.Services.Course.Application.pdb
