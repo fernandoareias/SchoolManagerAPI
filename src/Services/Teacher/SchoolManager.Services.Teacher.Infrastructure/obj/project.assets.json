@@ -5906,11 +5906,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Infrastructure\\SchoolManager.Services.Teacher.Infrastructure.csproj",
+      "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Infrastructure\\SchoolManager.Services.Teacher.Infrastructure.csproj",
       "projectName": "SchoolManager.Services.Teacher.Infrastructure",
-      "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Infrastructure\\SchoolManager.Services.Teacher.Infrastructure.csproj",
+      "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Infrastructure\\SchoolManager.Services.Teacher.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Infrastructure\\obj\\",
+      "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5930,11 +5930,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Application\\SchoolManager.Services.Teacher.Application.csproj": {
-              "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Application\\SchoolManager.Services.Teacher.Application.csproj"
+            "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Application\\SchoolManager.Services.Teacher.Application.csproj": {
+              "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Application\\SchoolManager.Services.Teacher.Application.csproj"
             },
-            "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj": {
-              "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj"
+            "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj": {
+              "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Teacher\\SchoolManager.Services.Teacher.Domain\\SchoolManager.Services.Teacher.Domain.csproj"
             }
           }
         }

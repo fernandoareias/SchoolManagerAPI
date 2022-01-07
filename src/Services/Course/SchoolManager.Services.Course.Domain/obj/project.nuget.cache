@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fj/d+uw/Wa4LlJywa0pW2Av1CjzeFQUeaBe3t96V+qDZdx41saMI0hOjocgPvg+zc4jYeEUGHKMuIK5w2IR7gA==",
+  "dgSpecHash": "lJBCjpGuL6j9xXERLwqA+L48+WKW8r/765axx1Z9zH3PFoadYgBCDJp+pI1LVbblWFzxJXCCmX6xdbq7gYcxhA==",
   "success": true,
-  "projectFilePath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj",
+  "projectFilePath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nando\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.13\\microsoft.entityframeworkcore.abstractions.5.0.13.nupkg.sha512"
   ],

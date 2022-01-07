@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj": {}
+    "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj": {}
   },
   "projects": {
-    "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj": {
+    "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj",
+        "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj",
         "projectName": "SchoolManager.Services.Course.Domain",
-        "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj",
+        "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj",
         "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Domain\\obj\\",
+        "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj": {
+    "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj",
+        "projectUniqueName": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj",
         "projectName": "SchoolManager.Services.Course.Tests",
-        "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj",
+        "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Tests\\SchoolManager.Services.Course.Tests.csproj",
         "packagesPath": "C:\\Users\\nando\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Tests\\obj\\",
+        "outputPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -94,8 +94,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj": {
-                "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj"
+              "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj": {
+                "projectPath": "C:\\dev\\SchoolManagerAPI\\src\\Services\\Course\\SchoolManager.Services.Course.Domain\\SchoolManager.Services.Course.Domain.csproj"
               }
             }
           }
