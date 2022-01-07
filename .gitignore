@@ -9,3 +9,6 @@
 /*/*/appsettings.json
 /*/*/appsettings.Development.json
 
+/src/Services/Identity/SchoolManagerAPI.Services.Identity/bin/Debug/net6.0
+/src/Services/Identity/SchoolManagerAPI.Services.Identity/obj/Debug/net6.0
+/src/Services/Identity/SchoolManagerAPI.Services.Identity/obj
