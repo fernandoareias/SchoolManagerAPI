@@ -1,3 +1,17 @@
+
+#!/bin/bash
+
+if rpm -q docker 
+then 
+    sudo yum install -y yum-utils
+    sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+    sudo yum install docker-ce docker-ce-cli containerd.io
+else
+    echo "Docker já está instalado!"
+fi
+
 # Cria as pastas necessárias, caso elas não existam
 mkdir -p elastic_cluster
 cd elastic_cluster
@@ -27,3 +41,17 @@ docker-compose up >> logs/docker_logs &
 
 # Caso necessário 
 # https://www.elastic.co/guide/en/cloud-enterprise/2.1/ece-configure-hosts-rhel-centos.html
+
+# Config Logstash
+wget https://artifacts.elastic.co/downloads/logstash/logstash-7.16.3-linux-x86_64.tar.gz
+tar -xzf logstash-7.16.3-linux-x86_64.tar.gz
+
+wget https://download.microsoft.com/download/b/c/5/bc5e407f-97ff-42ea-959d-12f2391063d7/sqljdbc_9.4.1.0_ptb.tar.gz
+tar -xzf sqljdbc_9.4.1.0_ptb.tar.gz
+
+mv sqljdbc_9.4/ptb/*.jar  logstash-7.16.3/logstash-core/lib/jars/
+mkdir -p logstash-7.16.3/queries
+logstash-7.16.3/bin/logstash --version
+
+
+
